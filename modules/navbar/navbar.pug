@@ -3,27 +3,27 @@
   const navItems =  [
         {
           name: "Split Screen",
-          href: "split-screen"
+          href: "#split-screen"
         },
         {
           name: "Sidebar",
-          href: "sidebar"
+          href: "#sidebar"
         },
         {
           name: "Sticky Footer",
-          href: "sticky-footer"
+          href: "#sticky-footer"
         },
         {
           name: "Hero Cover",
-          href: "hero-cover"
+          href: "#hero-cover"
         },
         {
           name: "Holy Grail",
-          href: "holy-grail"
+          href: "#holy-grail"
         },
         {
           name: "Fluid Grid",
-          href: "fluid-grid"
+          href: "#fluid-grid"
         },
       ];
 
@@ -31,4 +31,4 @@
 nav.navbar
   ul.nav
     each navItem in navItems
-      li.nav-item: a(href=navItem.href) #{navItem.name}
+      li.nav-item: button(onclick=`showItem('${navItem.href}')`) #{navItem.name}

@@ -1,4 +1,11 @@
-<!DOCTYPE html><html><head><title>A Pug Website</title></head><body><nav class="navbar"><ul class="nav"><li class="nav-item"><a href="split-screen">Split Screen</a></li><li class="nav-item"><a href="sidebar">Sidebar</a></li><li class="nav-item"><a href="sticky-footer">Sticky Footer</a></li><li class="nav-item"><a href="hero-cover">Hero Cover</a></li><li class="nav-item"><a href="holy-grail">Holy Grail</a></li><li class="nav-item"><a href="fluid-grid">Fluid Grid</a></li></ul></nav><div class="container"><div class="cell cell--1-of-2 cell--center"><img class="circle" src="http://placekitten.com/300/300"><h1>Cute Kitten</h1></div><div class="cell cell--1-of-2 cell--center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+<!DOCTYPE html><html><head><title>A Pug Website</title><script>
+function showItem(item) {
+  const splitScreen = document.getElementById('split-screen');
+  console.log({item, splitScreen});
+  if (item.indexOf('split-screen') > -1) {
+    splitScreen.classList.toggle('hide');
+  }
+}</script></head><body><nav class="navbar"><ul class="nav"><li class="nav-item"><button onclick="showItem('#split-screen')">Split Screen</button></li><li class="nav-item"><button onclick="showItem('#sidebar')">Sidebar</button></li><li class="nav-item"><button onclick="showItem('#sticky-footer')">Sticky Footer</button></li><li class="nav-item"><button onclick="showItem('#hero-cover')">Hero Cover</button></li><li class="nav-item"><button onclick="showItem('#holy-grail')">Holy Grail</button></li><li class="nav-item"><button onclick="showItem('#fluid-grid')">Fluid Grid</button></li></ul></nav><div class="container" id="split-screen"><div class="cell cell--1-of-2 cell--center"><img class="circle" src="http://placekitten.com/300/300"><h1>Cute Kitten</h1></div><div class="cell cell--1-of-2 cell--center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
 Ipsum aliquid laudantium velit accusamus fuga nemo. Facilis,
 eligendi dolorem recusandae similique tempora enim sit!
 Expedita voluptatum dolorem, magnam provident soluta debitis.</div></div></body></html><style>@import 'vendor/reset.css';
@@ -85,22 +92,22 @@ a {
 * {
   box-sizing: border-box;
 }
-h#1 {
+h1 {
   color: #121420;
 }
-h#2 {
+h2 {
   color: #121420;
 }
-h#3 {
+h3 {
   color: #121420;
 }
-h#4 {
+h4 {
   color: #121420;
 }
-h#5 {
+h5 {
   color: #121420;
 }
-h#6 {
+h6 {
   color: #121420;
 }
 body {
@@ -130,6 +137,9 @@ a:hover {
 .cell--center {
   justify-content: center;
   align-items: center;
+}
+.hide {
+  display: none;
 }
 .circle {
   border-radius: 50%;
