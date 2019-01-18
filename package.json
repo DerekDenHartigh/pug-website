@@ -1,0 +1,25 @@
+{
+  "name": "pug-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bundle.js",
+  "dependencies": {
+    "jstransformer-stylus": "^1.5.0",
+    "pug": "^2.0.3",
+    "pug-cli": "^1.0.0-alpha6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lisalemons/pug-website.git"
+  },
+  "author": "Lisa Lemons",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lisalemons/pug-website/issues"
+  },
+  "homepage": "https://github.com/lisalemons/pug-website#readme"
+}

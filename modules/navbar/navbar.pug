@@ -1,0 +1,34 @@
+//- Data
+-
+  const navItems =  [
+        {
+          name: "Split Screen",
+          href: "split-screen"
+        },
+        {
+          name: "Sidebar",
+          href: "sidebar"
+        },
+        {
+          name: "Sticky Footer",
+          href: "sticky-footer"
+        },
+        {
+          name: "Hero Cover",
+          href: "hero-cover"
+        },
+        {
+          name: "Holy Grail",
+          href: "holy-grail"
+        },
+        {
+          name: "Fluid Grid",
+          href: "fluid-grid"
+        },
+      ];
+
+//- HTML
+nav.navbar
+  ul.nav
+    each navItem in navItems
+      li.nav-item: a(href=navItem.href) #{navItem.name}
